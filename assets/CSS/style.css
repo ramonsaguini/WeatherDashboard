@@ -1,0 +1,22 @@
+body{
+  background-color: rgb(197, 231, 231);
+}
+h2{
+  text-align: center;
+}
+.list-group-item{
+  margin: 5px;
+  text-align: center;
+  border-radius: 15px;
+}
+.list-group-item:nth-child(odd){
+  background-color:silver;
+}
+.todayClass{
+  border-left: 2px;
+  border-bottom: 2px;
+  box-shadow: 2px 2px 5px;
+}
+.nextDays{
+  background-color: azure;
+}
