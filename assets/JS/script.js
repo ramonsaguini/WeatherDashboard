@@ -51,3 +51,16 @@ $(document).ready(function () {
       }
     });
   }
+
+  function addToHistory(cityName) {
+    if ($("#history").children().filter(`:contains("${cityName}")`).length === 0) {
+      $("#history").prepend(`
+        <a href="#" class="list-group-item">${cityName}</a>
+      `);
+
+      $("#latestList").append(`
+        <button class="btn btn-secondary btn-sm mb-1" onclick="getWeatherData('${cityName}', '${apiKey}')">${cityName}</button>
+      `);
+    }
+  }
+});
